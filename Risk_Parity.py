@@ -3,9 +3,9 @@ import numpy as np
 import tushare as ts
 from scipy.optimize import minimize
 
-# 读入5支股票 2015-01-01 到 2021-12-31 日收盘价数据，并计算对数收益率
+# 读入3支股票 2023-04-10 到 2024-04-09 日收盘价数据，并计算对数收益率
 
-ts.set_token('ab176d3ace8ee289f3b222fe0c34a049caef01edc403255a105e22c3')
+ts.set_token('your tusahre token') #这里我使用tushare接口调取数据，这里需要替换成你自己的tushare token，或者直接从本地读取收益率数据
 
 # 初始化pro接口
 pro = ts.pro_api()
