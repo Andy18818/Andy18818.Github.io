@@ -1,5 +1,9 @@
 # 同时考虑近期和长期波动率，优化组合权重
 
+# 在我们之前的Risk_Parity和Risk_Parity2中，我们使用的是tushare的API接口来调取数据，但一旦任务量提升就面临速度很慢的问题，同时有些数据调用还有权限限制
+# 因此我们接下来都直接使用本地数据进行回测，数据可以从Choice和Wind下载
+# 具体数据格式可以从代码中推测，或者可以看我上传的Excel文件示例
+
 import pandas as pd
 import numpy as np
 from scipy.optimize import minimize
